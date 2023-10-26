@@ -1,17 +1,22 @@
-op= input("enter op(+, -, *, /, sin, cos, tan, cot, factorial, sqrt):")
 import math
+
+op= input("enter op(+, -, *, /, sin, cos, tan, cot, factorial, sqrt):")
+
 if op == "+":
     a = float(input("Enter a:"))
     b = float(input("Enter b:"))
     r = a + b 
+
 if op == "-":
     a = float(input("Enter a:"))
     b = float(input("Enter b:"))
     r = a - b
+
 if op == "*":
     a = float(input("Enter a:"))
     b = float(input("Enter b:"))
     r = a * b 
+
 if op == "/": 
     a = float(input("Enter a:"))
     b = float(input("Enter b:"))
@@ -41,5 +46,13 @@ if op == "cot":
         print("Error")
     else: 
         r = 1/math.tan(math.radians(a))
+
+if op == "factorial":
+    a = int(input("Enter a:"))
+    r = math.factorial(a)
+
+if op == "sqrt":
+    a = float(input("Enter a:"))
+    r = math.sqrt(a)
 
 print(r)
